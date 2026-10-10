@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+temp_resume.pdf
+
+data/users.json
+data/raw/resumes.csv
+data/processed/cleaned_resumes.csv
+data/processed/resumes_with_skills.csv
