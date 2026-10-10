@@ -1,15 +1,36 @@
-venv/
-.venv/
+
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Secrets and local configuration
 .env
 .env.*
 !.env.example
 .streamlit/secrets.toml
+.pypirc
 
-temp_resume.pdf
-
+# Private user and resume data
 data/users.json
 data/raw/resumes.csv
 data/processed/cleaned_resumes.csv
 data/processed/resumes_with_skills.csv
+temp_resume.pdf
+
+# Build and test artifacts
+build/
+dist/
+.coverage
+htmlcov/
